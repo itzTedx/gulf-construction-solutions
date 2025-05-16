@@ -32,7 +32,7 @@ const ContactInfo = memo(() => (
             className="cursor-pointer text-left transition duration-300 hover:text-sky-500"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Visit Allied Gulf Construction Services W.L.L office location in Manama, Kingdom of Bahrain on Google Maps"
+            aria-label="Visit Gulf Construction Solutions W.L.L office location in Manama, Kingdom of Bahrain on Google Maps"
             itemProp="url"
           >
             <span itemProp="name">GULF CONSTRUCTION SOLUTIONS W.L.L</span>
@@ -185,8 +185,8 @@ export const Footer = () => {
 
         <div className="col-span-full mt-8 flex flex-wrap items-center justify-between gap-4">
           <p className="text-sm">
-            <span itemProp="copyrightYear">{year}</span> © Allied Gulf
-            Construction Services W.L.L. All Rights Reserved
+            <span itemProp="copyrightYear">{year}</span> © Gulf Construction
+            Solutions W.L.L. All Rights Reserved
           </p>
           <Button variant="link" className="w-fit px-0" asChild>
             <Link

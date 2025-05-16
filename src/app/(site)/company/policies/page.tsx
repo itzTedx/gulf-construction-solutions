@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Allied Gulf Construction Service",
+  title: "Privacy Policy | Gulf Construction Solutions W.L.L",
   description:
-    "Read our privacy policy to understand how Allied Gulf Construction Service W.L.L collects, uses, and protects your personal information.",
+    "Read our privacy policy to understand how Gulf Construction Solutions W.L.L W.L.L collects, uses, and protects your personal information.",
   robots: "noindex, follow",
   alternates: {
-    canonical: "https://www.alliedgulf.me/policies",
+    canonical: `${process.env.SITE_URL}/policies`,
   },
 };
 
@@ -21,10 +21,10 @@ export default function PoliciesPage() {
           "@type": "WebPage",
           name: "Privacy Policy",
           description:
-            "Privacy Policy for Allied Gulf Construction Service W.L.L",
+            "Privacy Policy for Gulf Construction Solutions W.L.L W.L.L",
           publisher: {
             "@type": "Organization",
-            name: "Allied Gulf Construction Service W.L.L",
+            name: "Gulf Construction Solutions W.L.L W.L.L",
           },
         })}
       </script>
@@ -41,22 +41,22 @@ export default function PoliciesPage() {
           />
           <div className="max-w-xl">
             <h2 className="mb-9 text-3xl font-bold">
-              Privacy Policy for Allied Gulf Construction Service
+              Privacy Policy for Gulf Construction Solutions W.L.L
             </h2>
             <ul className="space-y-6 text-justify">
               <li>
-                At Allied Gulf Construction Service W.L.L, accessible from
+                At Gulf Construction Solutions W.L.L W.L.L, accessible from
                 <Link
                   href="/"
                   className="text-sky-500 transition hover:text-sky-600"
                 >
                   {" "}
-                  www.alliedgulf.me,
+                  ${process.env.SITE_URL},
                 </Link>{" "}
                 one of our main priorities is the privacy of our visitors. This
                 Privacy Policy document contains types of information that is
-                collected and recorded by Allied Gulf Construction Service W.L.L
-                and how we use it.
+                collected and recorded by Gulf Construction Solutions W.L.L
+                W.L.L and how we use it.
               </li>
 
               <li>
@@ -130,7 +130,7 @@ export default function PoliciesPage() {
           <h3 className="text-3xl font-bold">Log Files</h3>
           <ul className="space-y-6 text-justify">
             <li>
-              Allied Gulf Construction Service W.L.L follows a standard
+              Gulf Construction Solutions W.L.L W.L.L follows a standard
               procedure of using log files. These files log visitors when they
               visit websites. All hosting companies do this and a part of
               hosting services analytics. The information collected by log files
@@ -156,7 +156,7 @@ export default function PoliciesPage() {
           <ul className="space-y-6 text-justify">
             <li>
               You may consult this list to find the Privacy Policy for each of
-              the advertising partners of Allied Gulf Construction Service
+              the advertising partners of Gulf Construction Solutions W.L.L
               W.l.L.
             </li>
             <li>
@@ -170,7 +170,7 @@ export default function PoliciesPage() {
               advertising content that you see on websites that you visit.
             </li>
             <li>
-              Note that Allied Gulf Construction Service W.l.L has no access to
+              Note that Gulf Construction Solutions W.L.L W.l.L has no access to
               or control over these cookies that are used by third-party
               advertisers.
             </li>
@@ -178,7 +178,7 @@ export default function PoliciesPage() {
           <h3 className="text-3xl font-bold">Third Party Privacy Policies</h3>
           <ul className="space-y-6 text-justify">
             <li>
-              Allied Gulf Construction Service W.l.L{`'`}s Privacy Policy does
+              Gulf Construction Solutions W.L.L W.l.L{`'`}s Privacy Policy does
               not apply to other advertisers or websites. Thus, we are advising
               you to consult the respective Privacy Policies of these
               third-party ad servers for more detailed information. It may
@@ -268,7 +268,7 @@ export default function PoliciesPage() {
               activity.
             </li>
             <li>
-              Allied Gulf Construction Service W.L.L does not knowingly collect
+              Gulf Construction Solutions W.L.L W.L.L does not knowingly collect
               any Personal Identifiable Information from children under the age
               of 13. If you think that your child provided this kind of
               information on our website, we strongly encourage you to contact
