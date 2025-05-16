@@ -51,7 +51,7 @@ interface LogoTextProps {
 export const LogoText = React.memo(({ className }: LogoTextProps) => (
   <p
     className={cn(
-      "text-xs font-bold text-gray-700 md:text-sm dark:text-gray-300 [&_span]:text-sky-700 dark:[&_span]:text-sky-500",
+      "[&_span]:text-primary text-primary-foreground text-xs font-bold md:text-sm",
       className
     )}
   >
