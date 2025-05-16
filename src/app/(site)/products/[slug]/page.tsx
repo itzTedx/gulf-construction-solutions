@@ -34,7 +34,7 @@ export default async function ProductsBySlugPage({
 
   const text = {
     title: "Get the best products at",
-    subtext: "Allied Gulf Construction Services W.L.L",
+    subtext: "Gulf Construction Solutions W.L.L",
   };
 
   const jsonLd = {
@@ -72,7 +72,7 @@ export default async function ProductsBySlugPage({
             segments={[
               { title: "Products", href: "/services" },
               {
-                title: category?.category!,
+                title: category?.category ?? "",
               },
             ]}
           />
@@ -96,7 +96,7 @@ export default async function ProductsBySlugPage({
                   <Card
                     className="aspect-square"
                     title={product.title}
-                    alt={`${product.title} - Construction Product by AGCS`}
+                    alt={`${product.title} - Construction Product by GCS`}
                     image={product.thumbnail}
                     key={product._id}
                     link={`/products/${slug}/${product.slug?.current}`}
@@ -119,19 +119,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const category = await getProductCategoryBySlug(slug);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://alliedgulf.me";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://gcs.sa";
 
   return {
-    title: `${category?.category || "Products"} | AGCS`,
+    title: `${category?.category || "Products"} | GCS`,
     description:
       category?.description || "Browse our wide range of construction products",
-    keywords: `${category?.category}, construction products, AGCS, building materials, `,
+    keywords: `${category?.category}, construction products, GCS, building materials, `,
     robots: "index, follow",
     alternates: {
       canonical: `${baseUrl}/products/${slug}`,
     },
     openGraph: {
-      title: `${category?.category || "Products"} | AGCS`,
+      title: `${category?.category || "Products"} | GCS`,
       description:
         category?.description ||
         "Browse our wide range of construction products",

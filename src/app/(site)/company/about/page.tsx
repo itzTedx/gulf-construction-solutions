@@ -11,7 +11,7 @@ const meta = {
     "Allied Gulf Construction Services is a leading construction and trading company in Bahrain and Middle East, specializing in sustainable construction, project management, and quality construction materials supply. We deliver excellence through value engineering and dedicated workmanship.",
   keywords:
     "allied gulf construction services, AGCS Bahrain, construction company middle east, sustainable construction, construction materials supplier, project management bahrain, BCR UK partner, construction services bahrain, quality management ISO 9001:2015, green construction middle east",
-  url: "https://www.alliedgulf.me/about",
+  url: `${process.env.SITE_URL}/about`,
   image: "https://www.alliedgulf.me/og-img.jpg",
 };
 

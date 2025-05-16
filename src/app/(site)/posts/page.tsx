@@ -12,7 +12,7 @@ export const revalidate = 3600; // Revalidate every hour
 const SITE_URL = process.env.SITE_URL;
 
 export const metadata: Metadata = {
-  title: "Blog Posts | AGCS - Latest Industry Insights & News",
+  title: "Blog Posts | GCS - Latest Industry Insights & News",
   description:
     "Stay updated with the latest industry insights, trends, and expert advice on our blog. Discover in-depth articles about technology, business solutions, and more.",
   robots: {
@@ -29,24 +29,24 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/posts`,
   },
   openGraph: {
-    title: "Blog Posts | AGCS - Latest Industry Insights",
+    title: "Blog Posts | GCS - Latest Industry Insights",
     description:
       "Stay updated with the latest industry insights, trends, and expert advice on our blog. Discover in-depth articles about technology, business solutions, and more.",
     type: "website",
-    siteName: "AGCS",
+    siteName: "GCS",
     locale: "en_US",
     images: [
       {
         url: "/og-image.jpg", // Make sure to add a default OG image
         width: 1200,
         height: 630,
-        alt: "AGCS Blog",
+        alt: "GCS Blog",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog Posts | AGCS - Latest Industry Insights",
+    title: "Blog Posts | GCS - Latest Industry Insights",
     description:
       "Stay updated with the latest industry insights, trends, and expert advice on our blog.",
     images: ["/og-image.jpg"],
@@ -75,13 +75,13 @@ export default async function PostsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "AGCS Blog",
+    name: "GCS Blog",
     description:
       "Stay updated with the latest industry insights and expert advice",
     url: `${SITE_URL}/posts`,
     publisher: {
       "@type": "Organization",
-      name: "AGCS",
+      name: "GCS",
       logo: {
         "@type": "ImageObject",
         url: `${SITE_URL}/logo.png`,
@@ -96,14 +96,14 @@ export default async function PostsPage() {
       dateModified: post._updatedAt || new Date().toISOString(),
       author: {
         "@type": "Organization",
-        name: "AGCS",
+        name: "GCS",
       },
       publisher: {
         "@type": "Organization",
-        name: "AGCS",
+        name: "GCS",
         logo: {
           "@type": "ImageObject",
-          url: "https://alliedgulf.me/agcs-logo.png",
+          url: "https://alliedgulf.me/GCS-logo.png",
         },
       },
     })),
@@ -121,7 +121,7 @@ export default async function PostsPage() {
             Blogs
           </h2>
           <p className="relative z-10 pt-1 text-lg font-light">
-            Everything you need to know. Can't find an answer?
+            Everything you need to know. Can&apos;t find an answer?
           </p>
           <FlickeringGrid
             className="absolute inset-0 z-0 size-full [mask-image:radial-gradient(75rem_circle_at_left,transparent,white)]"

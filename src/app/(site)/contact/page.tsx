@@ -25,12 +25,12 @@ const MultiStepLoader = dynamic(() =>
 );
 
 const meta = {
-  title: "Contact Allied Gulf Construction Services | Get a Quote Today",
+  title: "Contact Gulf Construction SOlutions | Get a Quote Today",
   description:
-    "Contact Allied Gulf Construction Services for specialty construction materials and services. Get expert consultation and quotes within 24 hours. Serving UAE and Gulf region.",
+    "Contact Gulf Construction SOlutions for specialty construction materials and services. Get expert consultation and quotes within 24 hours. Serving UAE and Gulf region.",
   keywords:
     "construction materials, building materials UAE, construction services Dubai, Allied Gulf contact, AGCS quote, building renovation UAE, construction consultation",
-  url: "https://www.alliedgulf.me/contact",
+  url: `${process.env.SITE_URL}/contact`,
 };
 
 export const metadata: Metadata = {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: meta.title,
     description: meta.description,
     url: meta.url,
-    siteName: "Allied Gulf Construction Services",
+    siteName: "Gulf Construction SOlutions",
     locale: "en_US",
     type: "website",
     images: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         url: "https://www.alliedgulf.me/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Allied Gulf Construction Services",
+        alt: "Gulf Construction SOlutions",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "Allied Gulf Construction Services" }],
+  authors: [{ name: "Gulf Construction SOlutions" }],
   category: "Construction Services",
   formatDetection: {
     telephone: true,
@@ -116,12 +116,12 @@ export default async function ContactPage({
           {
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Allied Gulf Construction Services Contact",
+            "name": "Gulf Construction SOlutions Contact",
             "description": "${meta.description}",
             "url": "${meta.url}",
             "provider": {
               "@type": "Organization",
-              "name": "Allied Gulf Construction Services",
+              "name": "Gulf Construction SOlutions",
               "url": "https://www.alliedgulf.me"
             }
           }
@@ -196,8 +196,8 @@ export default async function ContactPage({
                   <Icons.mail className="shrink-0" />
                 </div>
                 <CardDescription>
-                  Write us a few words about your project and product we'll get
-                  back to you within 24 hours.
+                  Write us a few words about your project and product we&apos;ll
+                  get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
               <Separator />

@@ -5,9 +5,9 @@ import GalleryGrid from "@/features/gallery/GalleryGrid";
 import { getGalleries } from "@/sanity/lib/fetch";
 
 export const metadata: Metadata = {
-  title: "Project Gallery | Allied Gulf Construction Services",
+  title: "Project Gallery |  Gulf Construction Services",
   description:
-    "Browse through our comprehensive collection of construction projects, successful team achievements, and innovative solutions at Allied Gulf Construction Services. View our portfolio showcasing excellence in construction.",
+    "Browse through our comprehensive collection of construction projects, successful team achievements, and innovative solutions at Gulf Construction Solutions. View our portfolio showcasing excellence in construction.",
   keywords: [
     "construction portfolio",
     "project gallery",
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     "Allied Gulf gallery",
   ],
   openGraph: {
-    title: "Project Gallery | Allied Gulf Construction Services",
+    title: "Project Gallery | Gulf Construction Solutions",
     description:
-      "Explore our portfolio of successful construction projects and team achievements at Allied Gulf Construction Services",
+      "Explore our portfolio of successful construction projects and team achievements at Gulf Construction Solutions",
     type: "website",
     locale: "en_US",
-    siteName: "Allied Gulf Construction Services",
+    siteName: "Gulf Construction Solutions",
   },
   robots: {
     index: true,
@@ -43,7 +43,7 @@ const jsonLd = {
     "Browse through our comprehensive collection of construction projects and achievements",
   publisher: {
     "@type": "Organization",
-    name: "Allied Gulf Construction Services",
+    name: "Gulf Construction Solutions",
   },
 };
 

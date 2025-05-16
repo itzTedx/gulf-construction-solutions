@@ -155,11 +155,11 @@ export async function generateMetadata({
     };
 
   return {
-    title: `${product.title} | AGCS Products`,
+    title: `${product.title} | GCS Products`,
     description: product.description,
-    keywords: [`${product.title}`, `${slug}`, "construction products", "AGCS"],
+    keywords: [`${product.title}`, `${slug}`, "construction products", "GCS"],
     openGraph: {
-      title: `${product.title} | AGCS Products`,
+      title: `${product.title} | GCS Products`,
       description:
         product.description || "Browse our wide range of construction products",
       images: product.image?.map((img) => ({
@@ -170,7 +170,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.title} | AGCS Products`,
+      title: `${product.title} | GCS Products`,
       description: product.description ?? "",
     },
     robots: {
@@ -184,7 +184,7 @@ export async function generateStaticParams() {
   const categories = await getCategories();
 
   return categories.map(async (category) => {
-    const products = await getProductsBySlug(category.slug?.current!);
+    const products = await getProductsBySlug(category.slug?.current ?? "");
 
     return products.map((product) => ({
       slug: category.slug?.current,

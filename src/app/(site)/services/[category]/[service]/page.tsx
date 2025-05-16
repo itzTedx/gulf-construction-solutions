@@ -14,7 +14,7 @@ export async function generateStaticParams() {
   const categories = await getServicesCategories();
 
   return categories.map(async (category) => {
-    const service = await getServiceBySlug(category.slug?.current!);
+    const service = await getServiceBySlug(category.slug?.current ?? "");
 
     return service
       ? [
@@ -47,7 +47,7 @@ export default async function ServicePage({
     description: service.servicesDescription,
     provider: {
       "@type": "Organization",
-      name: "AGCS",
+      name: "GCS",
     },
     image: service.servicesImage && urlFor(service?.servicesImage).url,
     category: categoryQuery,
@@ -139,11 +139,11 @@ export async function generateMetadata({
   if (!service) return { title: "Service Not Found" };
 
   return {
-    title: `${service.servicesTitle} | AGCS Services`,
+    title: `${service.servicesTitle} | GCS Services`,
     description: service.servicesDescription,
     keywords: [
       `${service.servicesTitle}`,
-      "AGCS services",
+      "GCS services",
       categoryQuery,
       service.metaTagKeyword!,
     ],
@@ -152,7 +152,7 @@ export async function generateMetadata({
       description: service.servicesDescription!,
       type: "article",
       publishedTime: new Date().toISOString(),
-      authors: ["AGCS"],
+      authors: ["GCS"],
     },
     twitter: {
       card: "summary_large_image",

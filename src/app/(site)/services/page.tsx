@@ -7,20 +7,18 @@ import Breadcrumb from "@/features/products/components/breadcrumb";
 import { getServicesCategories } from "@/sanity/lib/fetch";
 
 export const metadata: Metadata = {
-  title:
-    "Construction & Engineering Services in Bahrain | Allied Gulf Construction",
+  title: "Construction & Engineering Services in Bahrain | GCS",
   description:
     "Expert construction and engineering services in Bahrain and Middle East. Specialized in industrial, commercial, and residential projects with comprehensive lifecycle management.",
   keywords:
-    "construction services Bahrain, engineering services Middle East, industrial construction, commercial construction, project lifecycle management",
+    "construction Solutions Bahrain, engineering services Middle East, industrial construction, commercial construction, project lifecycle management",
   openGraph: {
-    title:
-      "Professional Construction & Engineering Services | Allied Gulf Construction",
+    title: "Professional Construction & Engineering Services | GCS",
     description:
       "Leading construction and engineering services provider in Bahrain and Middle East. Expert project management from planning to completion.",
     type: "website",
     locale: "en_US",
-    siteName: "Allied Gulf Construction Services",
+    siteName: "Gulf Construction Solutions",
   },
   twitter: {
     card: "summary_large_image",
@@ -41,12 +39,12 @@ export default async function ServicesPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Allied Gulf Construction Services",
+    name: "Gulf Construction Solutions",
     description:
       "Professional construction and engineering services in Bahrain and Middle East",
     provider: {
       "@type": "Organization",
-      name: "Allied Gulf Construction Services",
+      name: "Gulf Construction Solutions",
       areaServed: ["Bahrain", "Middle East"],
     },
     serviceType: services.map((service) => service.category),

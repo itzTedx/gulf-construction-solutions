@@ -30,10 +30,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const projectCount = projects.length;
 
   return {
-    title: "Our Projects | Construction & Development Projects | AGCS",
+    title: "Our Projects | Construction & Development Projects | GCS",
     description: `Explore our ${projectCount + 240}+ successful construction and development projects. View our portfolio of completed works across various sectors.`,
     openGraph: {
-      title: "Our Projects | Construction & Development Projects | AGCS",
+      title: "Our Projects | Construction & Development Projects | GCS",
       description: `Explore our ${projectCount + 240}+ successful construction and development projects. View our portfolio of completed works across various sectors.`,
       type: "website",
       images: [
@@ -41,18 +41,18 @@ export async function generateMetadata(): Promise<Metadata> {
           url: "/og-projects.jpg",
           width: 1200,
           height: 630,
-          alt: "AGCS Projects Portfolio",
+          alt: "GCS Projects Portfolio",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Our Projects | AGCS",
+      title: "Our Projects | GCS",
       description: `Explore our ${projectCount}+ successful construction and development projects.`,
       images: ["/og-projects.jpg"],
     },
     alternates: {
-      canonical: "https://www.alliedgulf.me/projects",
+      canonical: `${process.env.SITE_URL}/projects`,
     },
   };
 }
@@ -65,12 +65,12 @@ export default async function ProjectsPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "AGCS Construction Projects",
-    description: "Portfolio of construction and development projects by AGCS",
+    name: "GCS Construction Projects",
+    description: "Portfolio of construction and development projects by GCS",
     numberOfItems: projects.length,
     itemListElement: projects.map((project, index) => ({
       "@type": "Project",
-      "@id": `https://agcs.com/projects#${project._id}`,
+      "@id": ` ${process.env.SITE_URL}/projects#${project._id}`,
       name: project.title,
       description: project.description,
       position: index + 1,
@@ -86,9 +86,7 @@ export default async function ProjectsPage() {
       />
       <main>
         <header>
-          <h1 className="sr-only">
-            AGCS Construction and Development Projects
-          </h1>
+          <h1 className="sr-only">GCS Construction and Development Projects</h1>
           <Suspense
             fallback={<div className="bg-muted h-[60vh] animate-pulse" />}
           >

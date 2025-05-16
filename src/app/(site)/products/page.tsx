@@ -8,25 +8,25 @@ import { getCategories } from "@/sanity/lib/fetch";
 
 export const metadata: Metadata = {
   title:
-    "Construction Products & Materials Categories | Allied Gulf Construction Services",
+    "Construction Products & Materials Categories | Gulf Construction Solutions",
   description:
     "Explore our comprehensive range of specialty construction materials, building supplies, and industrial products. Quality construction materials for contractors and builders in Gulf region.",
   keywords:
     "construction materials, building supplies, construction products, specialty materials, Gulf construction supplies",
   openGraph: {
-    title: "Construction Products & Materials | AGCS",
+    title: "Construction Products & Materials | GCS",
     description:
       "Premium construction materials and building supplies for professional contractors.",
     type: "website",
     locale: "en_US",
-    siteName: "Allied Gulf Construction Services",
+    siteName: "Gulf Construction Solutions",
   },
 };
 
 export default async function ProductsPage() {
   const text = {
     title: "Get the best products at",
-    subtext: "Allied Gulf Construction Services W.L.L",
+    subtext: "Gulf Construction Solutions W.L.L",
   };
   const products = await getCategories();
 

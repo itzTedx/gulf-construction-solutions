@@ -22,23 +22,23 @@ export async function generateMetadata({
   const description = category?.description || "";
 
   return {
-    title: `${categoryName} Services - Allied Gulf Construction`,
+    title: `${categoryName} Services - GCS`,
     description: description,
-    keywords: `${categoryName.toLowerCase()} services, construction services, allied gulf construction, bahrain construction, ${categoryName.toLowerCase()}`,
+    keywords: `${categoryName.toLowerCase()} services, construction services, GCS, bahrain construction}`,
     openGraph: {
-      title: `${categoryName} Services - Allied Gulf Construction`,
+      title: `${categoryName} Services - GCS`,
       description: description,
       type: "website",
       locale: "en_US",
-      siteName: "Allied Gulf Construction",
+      siteName: "GCS",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${categoryName} Services - Allied Gulf Construction`,
+      title: `${categoryName} Services - GCS`,
       description: description,
     },
     alternates: {
-      canonical: `https://alliedgulfconstruction.com/services/${query}`,
+      canonical: `https://gcs.sa/services/${query}`,
     },
   };
 }
@@ -64,7 +64,7 @@ export default async function ServicesByCategoryPage({
 
   const text = {
     title: "Get the best services at",
-    subtext: "Allied Gulf Construction Services W.L.L",
+    subtext: "Gulf Construction Solutions W.L.L",
   };
 
   // Create JSON-LD structured data
@@ -77,7 +77,7 @@ export default async function ServicesByCategoryPage({
       "@type": "Service",
       position: index + 1,
       name: service.servicesTitle,
-      url: `https://alliedgulf.me/services/${query}/${service.servicesSlug?.current}`,
+      url: `https://gcs.sa/services/${query}/${service.servicesSlug?.current}`,
     })),
   };
 
@@ -94,7 +94,7 @@ export default async function ServicesByCategoryPage({
             segments={[
               { title: "Services", href: "/services" },
               {
-                title: category?.category!,
+                title: category?.category ?? "",
               },
             ]}
           />

@@ -32,16 +32,16 @@ import { CERTIFICASTES_QUERYResult } from "../../../../../sanity.types";
 
 export const metadata: Metadata = {
   title:
-    "Professional Certifications & Quality Standards | Allied Gulf Construction Services",
+    "Professional Certifications & Quality Standards | Gulf Construction Solutions",
   description:
-    "Discover AGCS's international certifications and quality standards. ISO certified construction services ensuring compliance with global regulations and industry standards in the Gulf region.",
+    "Discover GCS's international certifications and quality standards. ISO certified construction services ensuring compliance with global regulations and industry standards in the Gulf region.",
   keywords:
-    "AGCS certifications, construction certifications, ISO certification, quality standards, Gulf construction services",
+    "GCS certifications, construction certifications, ISO certification, quality standards, Gulf construction Solutions",
   openGraph: {
     title:
-      "Professional Certifications & Quality Standards | Allied Gulf Construction Services",
+      "Professional Certifications & Quality Standards | Gulf Construction Solutions",
     description:
-      "Discover AGCS's international certifications and quality standards. ISO certified construction services ensuring compliance with global regulations and industry standards in the Gulf region.",
+      "Discover GCS's international certifications and quality standards. ISO certified construction services ensuring compliance with global regulations and industry standards in the Gulf region.",
     type: "website",
     locale: "en_US",
     images: [
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
         url: "/og-certifications.jpg", // Make sure to add this image to your public folder
         width: 1200,
         height: 630,
-        alt: "AGCS Certifications Overview",
+        alt: "GCS Certifications Overview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Certifications & Quality Standards | AGCS",
+    title: "Professional Certifications & Quality Standards | GCS",
     description:
       "View our international certifications and compliance with global regulations and directives.",
     images: ["/og-certifications.jpg"],
@@ -66,16 +66,12 @@ export const metadata: Metadata = {
 const certificationSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "AGCS Certifications and Quality Standards",
+  name: "GCS Certifications and Quality Standards",
   description:
-    "Allied Gulf Construction Services certifications and quality standards documentation.",
+    " Gulf Construction Solutions certifications and quality standards documentation.",
   publisher: {
     "@type": "Organization",
-    name: "Allied Gulf Construction Services",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.agcs.com/logo.png", // Update with actual logo URL
-    },
+    name: " Gulf Construction Solutions",
   },
 };
 
@@ -92,7 +88,7 @@ function CertificateGrid({
             <div className="relative m-3 aspect-[1/1.414] overflow-hidden border bg-white">
               <Image
                 src={urlFor(cert.image).url()}
-                alt={`${cert.title} Certificate from Allied Gulf Construction Services`}
+                alt={`${cert.title} Certificate from  Gulf Construction Solutions`}
                 title={cert.title ?? "Certificate"}
                 fill
                 style={{ objectFit: "cover" }}
@@ -132,7 +128,7 @@ function CertificateGrid({
                           <DropdownMenuSeparator />
                           <DropdownMenuItem asChild>
                             <Link
-                              href={`${cert.certificate}?dl=${cert.title}-Certificate-AGCS.pdf`}
+                              href={`${cert.certificate}?dl=${cert.title}-Certificate-GCS.pdf`}
                             >
                               Download PDF
                             </Link>
