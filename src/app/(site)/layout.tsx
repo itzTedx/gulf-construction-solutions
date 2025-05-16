@@ -24,7 +24,6 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   ...siteMetadata,
-  // Add any additional runtime metadata here if needed
 };
 
 export default function RootLayout({
@@ -48,8 +47,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="apple-mobile-web-app-title" content="AGCS" />
+        <meta name="apple-mobile-web-app-title" content="GCS" />
       </head>
       <body className={`${roboto.className} antialiased`}>
         <ThemeProvider

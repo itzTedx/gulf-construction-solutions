@@ -1,13 +1,13 @@
 export const siteConfig = {
-  name: "Gulf Construction Solutions W.L.L - Bahrain",
+  name: "Gulf Construction Solutions W.L.L - Saudi Arabia",
   shortName: "Gulf Construction Solutions W.L.L",
   description:
-    "AGCS is a Bahrain based Civil and Mechanical contracting company handling various prestigious projects and ranked as a leading General Trading company",
-  url: "https://www.gulfconst.me",
+    "GCS is a Middle East based Civil and Mechanical contracting company handling various prestigious projects and ranked as a leading General Trading company",
+  url: "https://www.gcs.sa",
   logo: "/favicon.svg",
   ogImage: "/og-img.jpg",
 
-  contact: ["+973 1779 1317", "+973 3818 4631", "+973 3468 5656"],
+  contact: ["+966541450295"],
   authors: [{ name: "Gulf Construction Solutions W.L.L" }],
   creator: "Tojo Alex",
   publisher: "Gulf Construction Solutions W.L.L",
@@ -19,7 +19,7 @@ export const metadata = {
   description: siteConfig.description,
   keywords: [
     "gulf construction solutions",
-    "agcs",
+    "gcs",
     "materials",
     "bcr uk",
     "bahrain",
@@ -27,8 +27,8 @@ export const metadata = {
     "leading",
     "trading",
     "specialty",
-    "construction company bahrain",
-    "civil contractors bahrain",
+    "construction company saudi",
+    "civil contractors saudi",
     "mechanical contractors",
   ],
   authors: siteConfig.authors,
