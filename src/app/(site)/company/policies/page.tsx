@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy | Gulf Construction Solutions W.L.L",
   description:
-    "Read our privacy policy to understand how Gulf Construction Solutions W.L.L W.L.L collects, uses, and protects your personal information.",
+    "Read our privacy policy to understand how Gulf Construction Solutions W.L.L collects, uses, and protects your personal information.",
   robots: "noindex, follow",
   alternates: {
     canonical: `${process.env.SITE_URL}/policies`,
@@ -51,12 +51,12 @@ export default function PoliciesPage() {
                   className="text-sky-500 transition hover:text-sky-600"
                 >
                   {" "}
-                  ${process.env.SITE_URL},
+                  {process.env.SITE_URL?.replace("https://", "")},
                 </Link>{" "}
                 one of our main priorities is the privacy of our visitors. This
                 Privacy Policy document contains types of information that is
-                collected and recorded by Gulf Construction Solutions W.L.L
-                W.L.L and how we use it.
+                collected and recorded by Gulf Construction Solutions W.L.L and
+                how we use it.
               </li>
 
               <li>
@@ -68,7 +68,7 @@ export default function PoliciesPage() {
                 This Privacy Policy applies only to our online activities and is
                 valid for visitors to our website with regards to the
                 information that they shared and / or collect in Allied Gulf
-                Construction Service W.l.L. This policy is not applicable to any
+                Construction Service W.L.L. This policy is not applicable to any
                 information collected offline or via channels other than this
                 website.
               </li>
@@ -130,13 +130,13 @@ export default function PoliciesPage() {
           <h3 className="text-3xl font-bold">Log Files</h3>
           <ul className="space-y-6 text-justify">
             <li>
-              Gulf Construction Solutions W.L.L W.L.L follows a standard
-              procedure of using log files. These files log visitors when they
-              visit websites. All hosting companies do this and a part of
-              hosting services analytics. The information collected by log files
-              include internet protocol (IP) addresses, browser type, Internet
-              Service Provider (ISP), date and time stamp, referring/exit pages,
-              and possibly the number of clicks. These are not linked to any
+              Gulf Construction Solutions W.L.L follows a standard procedure of
+              using log files. These files log visitors when they visit
+              websites. All hosting companies do this and a part of hosting
+              services analytics. The information collected by log files include
+              internet protocol (IP) addresses, browser type, Internet Service
+              Provider (ISP), date and time stamp, referring/exit pages, and
+              possibly the number of clicks. These are not linked to any
               information that is personally identifiable. The purpose of the
               information is for analyzing trends, administering the site,
               tracking user{`'`}s movement on the website, and gathering
@@ -157,7 +157,6 @@ export default function PoliciesPage() {
             <li>
               You may consult this list to find the Privacy Policy for each of
               the advertising partners of Gulf Construction Solutions W.L.L
-              W.l.L.
             </li>
             <li>
               Third-party ad servers or ad networks uses technologies like
@@ -170,20 +169,20 @@ export default function PoliciesPage() {
               advertising content that you see on websites that you visit.
             </li>
             <li>
-              Note that Gulf Construction Solutions W.L.L W.l.L has no access to
-              or control over these cookies that are used by third-party
+              Note that Gulf Construction Solutions W.L.L has no access to or
+              control over these cookies that are used by third-party
               advertisers.
             </li>
           </ul>
           <h3 className="text-3xl font-bold">Third Party Privacy Policies</h3>
           <ul className="space-y-6 text-justify">
             <li>
-              Gulf Construction Solutions W.L.L W.l.L{`'`}s Privacy Policy does
-              not apply to other advertisers or websites. Thus, we are advising
-              you to consult the respective Privacy Policies of these
-              third-party ad servers for more detailed information. It may
-              include their practices and instructions about how to opt-out of
-              certain options.
+              Gulf Construction Solutions W.L.L&apos;s Privacy Policy does not
+              apply to other advertisers or websites. Thus, we are advising you
+              to consult the respective Privacy Policies of these third-party ad
+              servers for more detailed information. It may include their
+              practices and instructions about how to opt-out of certain
+              options.
             </li>
             <li>
               You can choose to disable cookies through your individual browser
@@ -268,11 +267,11 @@ export default function PoliciesPage() {
               activity.
             </li>
             <li>
-              Gulf Construction Solutions W.L.L W.L.L does not knowingly collect
-              any Personal Identifiable Information from children under the age
-              of 13. If you think that your child provided this kind of
-              information on our website, we strongly encourage you to contact
-              us immediately and we will do our best efforts to promptly remove
+              Gulf Construction Solutions W.L.L does not knowingly collect any
+              Personal Identifiable Information from children under the age of
+              13. If you think that your child provided this kind of information
+              on our website, we strongly encourage you to contact us
+              immediately and we will do our best efforts to promptly remove
               such information from our records.
             </li>
           </ul>
