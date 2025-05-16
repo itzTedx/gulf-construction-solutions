@@ -14,8 +14,8 @@ const ContactInfo = memo(() => (
     itemType="http://schema.org/Organization"
     className="col-span-2 max-lg:col-span-full"
   >
-    <meta itemProp="name" content="Allied Gulf Construction Services W.L.L" />
-    <meta itemProp="url" content="https://alliedgulf.me" />
+    <meta itemProp="name" content="Gulf Construction Services W.L.L" />
+    <meta itemProp="url" content="https://gcs.sa" />
     <h6 className="mb-4 text-xl font-semibold">Contact</h6>
     <ul className="space-y-3">
       <li>
@@ -52,30 +52,12 @@ const ContactInfo = memo(() => (
         <div itemScope itemType="http://schema.org/ContactPoint">
           <meta itemProp="contactType" content="customer service" />
           <Link
-            href="tel:+97317791317"
+            href="tel:+966541450295"
             className="cursor-pointer transition duration-300 hover:text-sky-500"
             itemProp="telephone"
             aria-label="Call our main office at +973 1779 1317"
           >
-            +973 - 1779 1317
-          </Link>
-          <br />
-          <Link
-            href="tel:+97338184631"
-            className="cursor-pointer transition duration-300 hover:text-sky-500"
-            itemProp="telephone"
-            aria-label="Call our mobile number at +973 3818 4631"
-          >
-            +973 - 3818 4631
-          </Link>
-          <br />
-          <Link
-            href="tel:+97334685656"
-            className="cursor-pointer transition duration-300 hover:text-sky-500"
-            itemProp="telephone"
-            aria-label="Call our alternative number at +973 3468 5656"
-          >
-            +973 - 3468 5656
+            +966 54 145 0295
           </Link>
         </div>
       </li>
@@ -83,21 +65,21 @@ const ContactInfo = memo(() => (
         <IconMail aria-hidden="true" />
         <div>
           <Link
-            href="mailto:trade@alliedgulf.me"
+            href="mailto:info@gcs.sa"
+            className="cursor-pointer transition duration-300 hover:text-sky-500"
+            itemProp="email"
+            aria-label="Send email to our information department"
+          >
+            info@gcs.sa
+          </Link>
+          <br />
+          <Link
+            href="mailto:sales@gcs.sa"
             className="cursor-pointer transition duration-300 hover:text-sky-500"
             itemProp="email"
             aria-label="Send email to our trade department"
           >
-            trade@alliedgulf.me
-          </Link>
-          <br />
-          <Link
-            href="mailto:sales@alliedgulf.me"
-            className="cursor-pointer transition duration-300 hover:text-sky-500"
-            itemProp="email"
-            aria-label="Send email to our sales department"
-          >
-            sales@alliedgulf.me
+            trade@gcs.sa
           </Link>
         </div>
       </li>
