@@ -1,16 +1,16 @@
 export const siteConfig = {
-  name: "Allied Gulf Construction Services W.L.L - Bahrain",
-  shortName: "Allied Gulf Construction Services W.L.L",
+  name: "Gulf Construction Solutions W.L.L - Bahrain",
+  shortName: "Gulf Construction Solutions W.L.L",
   description:
     "AGCS is a Bahrain based Civil and Mechanical contracting company handling various prestigious projects and ranked as a leading General Trading company",
-  url: "https://www.alliedgulf.me",
+  url: "https://www.gulfconst.me",
   logo: "/favicon.svg",
   ogImage: "/og-img.jpg",
 
   contact: ["+973 1779 1317", "+973 3818 4631", "+973 3468 5656"],
-  authors: [{ name: "Allied Gulf Construction Services" }],
+  authors: [{ name: "Gulf Construction Solutions W.L.L" }],
   creator: "Tojo Alex",
-  publisher: "Allied Gulf Construction Services",
+  publisher: "Gulf Construction Solutions W.L.L",
 };
 
 export const metadata = {
@@ -18,7 +18,7 @@ export const metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
-    "allied gulf construction services",
+    "gulf construction solutions",
     "agcs",
     "materials",
     "bcr uk",

@@ -35,7 +35,7 @@ const ContactInfo = memo(() => (
             aria-label="Visit Allied Gulf Construction Services W.L.L office location in Manama, Kingdom of Bahrain on Google Maps"
             itemProp="url"
           >
-            <span itemProp="name">ALLIED GULF CONSTRUCTION SERVICES W.L.L</span>
+            <span itemProp="name">GULF CONSTRUCTION SOLUTIONS W.L.L</span>
             <br />
             <span itemProp="streetAddress">
               Flat: 61, Building: 317, Road: 39, Block: 337, Umm Al Hassam

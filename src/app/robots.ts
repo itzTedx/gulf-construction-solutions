@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/studio/",
     },
-    sitemap: "https://www.alliedgulf.me/sitemap.xml",
+    sitemap: "https://gcs.sa/sitemap.xml",
   };
 }

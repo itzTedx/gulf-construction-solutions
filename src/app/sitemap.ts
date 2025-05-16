@@ -8,7 +8,7 @@ import {
   getServicesCategories,
 } from "@/sanity/lib/fetch";
 
-const BASE_URL = "https://www.alliedgulf.me";
+const BASE_URL = process.env.SITE_URL;
 
 const createSitemapEntry = (
   path: string,
@@ -54,7 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const servicesByCategoryEntries = (
       await Promise.all(
         servicesCategoriesQuery.map((s) =>
-          getServicesByCategory(s.slug?.current!).then((services) =>
+          getServicesByCategory(s.slug?.current ?? "").then((services) =>
             services.map((c) =>
               createSitemapEntry(
                 `/services/${s.slug?.current}/${c.servicesSlug?.current}`,
@@ -81,7 +81,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const productsByCategoryEntries = (
       await Promise.all(
         productsCategoriesQuery.map((s) =>
-          getProductsBySlug(s.slug?.current!).then((products) =>
+          getProductsBySlug(s.slug?.current ?? "").then((products) =>
             products.map((c) =>
               createSitemapEntry(
                 `/products/${s.slug?.current}/${c.slug?.current}`,

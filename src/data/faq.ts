@@ -345,7 +345,7 @@ export const FAQS: FAQSection[] = [
         question:
           "How can I contact Gulf Construction Solutions for a project inquiry?",
         answer:
-          "You can contact us via phone at +973-1779 1317 or email at trade@alliedgulf.me for project inquiries and consultations.",
+          "You can contact us via phone at +973-1779 1317 or email at trade@gulfconst.me for project inquiries and consultations.",
       },
       {
         question:

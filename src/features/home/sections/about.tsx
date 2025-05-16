@@ -32,7 +32,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      aria-label="About Allied Gulf Construction Services"
+      aria-label="About Gulf Construction Solutions W.L.L"
       className="dark:bg-navbar bg-[#e8e8e8] py-12 md:py-20"
     >
       <div className="relative container grid gap-12 md:grid-cols-2">
@@ -40,8 +40,8 @@ export const About = () => {
           <Image
             src="/images/about.webp"
             fill
-            alt="Allied Gulf Construction Services office building"
-            title="Allied Gulf Construction Services office building"
+            alt="Gulf Construction Solutions W.L.L office building"
+            title="Gulf Construction Solutions W.L.L office building"
             className="object-contain"
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
